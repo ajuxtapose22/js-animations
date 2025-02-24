@@ -3,6 +3,7 @@ const context = canvas.getContext('2d')
 canvas.width = 600
 canvas.height = 700
 
+
 class HeavyBall {
     constructor(x,y,radius,color) {
         this.x = x
@@ -101,6 +102,29 @@ const heavyBalls = [
     new HeavyBall(300, 20 , 30 ,'red')
 ]
 const ball2 = new LightBall(150, 150, 20, 'green')
+
+
+// RESET BUTTON
+const resetBtn = document.querySelector('#resetBtn')
+resetBtn.addEventListener('click', () => {
+    // Reset heavy balls
+    heavyBalls[0].x = 20
+    heavyBalls[0].y = 400
+    heavyBalls[0].vx = Math.random() * 2
+    heavyBalls[0].vy = Math.random() * 2
+
+    heavyBalls[1].x = 300
+    heavyBalls[1].y = 20
+    heavyBalls[1].vx = Math.random() * 2
+    heavyBalls[1].vy = Math.random() * 2
+
+    // Reset light ball
+    ball2.x = 150
+    ball2.y = 150
+    ball2.vx = Math.random() * 2
+    ball2.vy = Math.random() * 2
+})
+
 
 function update() {
     // Update the ball's position or state here in future
