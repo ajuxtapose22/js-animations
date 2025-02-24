@@ -1,1 +1,53 @@
-JavaScript Animation Practice
+# Bouncing Balls Animation
+
+A simple HTML5 Canvas animation demonstrating physics-based bouncing balls with different properties.
+Overview
+This project creates an interactive animation of bouncing balls with different physical properties:
+
+Heavy balls with stronger gravity
+Light balls with weaker gravity
+Random initial velocities
+Wall collision detection
+Reset functionality
+
+## Features
+
+Two types of balls:
+
+Heavy Balls: Higher gravity (.7) and bounce coefficient of .8
+Light Balls: Lower gravity (.06) and bounce coefficient of .9
+
+
+Each ball has:
+
+Random initial velocity
+Wall collision detection and response
+Unique colors
+
+
+Reset button to restart animation
+
+## Usage
+
+Open index.html in a web browser
+Watch the balls bounce with different physics properties
+Click the "Reset" button to restart the animation
+
+## Code Structure
+
+HeavyBall class: Creates balls with higher gravity
+LightBall class: Creates balls with lower gravity
+gameLoop: Handles animation updates and rendering
+Event listener for reset functionality
+
+## Future Improvements
+
+Potential additions:
+
+Ball-to-ball collisions
+User-controlled ball properties
+Click to add new balls
+Color customization
+Drag and drop functionality
+
+Let me know if you'd like me to expand any section of this README!
