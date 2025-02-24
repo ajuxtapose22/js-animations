@@ -56,9 +56,6 @@ class Ball {
         return dist < this.radius
     }
   }
-
-
-
   
 // Particle class
 class Particle {
